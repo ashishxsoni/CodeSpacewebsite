@@ -1,0 +1,109 @@
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 50px;
+    position: relative;
+    border: 2px solid #f27a05;
+    border-radius: 10px;
+    margin: 10px;
+    transition: border-color 0.5s ease-in-out;
+
+}
+
+form:hover {
+    border-color: #fff;
+
+}
+
+form::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    z-index: -1;
+    transition: transform 0.5s ease-in-out, background-color 0.5s ease-in-out;
+}
+
+form:hover::after {
+    background-color: #f27a05;
+    transform: translate(-50%, -50%) scale(1.05);
+}
+
+#with {
+    color: #f27a05;
+    margin: 0 8px;
+}
+
+.form-fields {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-fields input {
+    padding: 5px 10px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    color: #fff;
+    overflow: hidden;
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.submit button {
+    height: 40px;
+    width: 100px;
+    border-radius: 5px;
+}
+
+#submit {
+    background-color: #f27a05;
+    border: none;
+    color: #fff;
+    transition: 0.5s ease-in;
+}
+
+#submit:hover {
+    transform: scale(1.1);
+}
+
+#reset:hover {
+    transform: scale(1.1);
+}
+
+#reset {
+    background-color: #fff;
+    transition: 0.5s ease-in;
+}
+
+#reset:focus {
+    outline: none;
+}
+
+.form-fields input:focus {
+    outline: none;
+}
+
+::placeholder {
+    color: #f27a05;
+}
+
+h2 {
+    text-align: center;
+}
+
+@media (max-width: 500px) {
+    .form-fields {
+        grid-template-columns: 1fr;
+    }
+}

@@ -34,7 +34,7 @@
         <link href="css/style.css" rel="stylesheet" />
         <!-- responsive style -->
         <link href="css/responsive.css" rel="stylesheet" />
-        <link rel="stylesheet" href="css/connect.css">
+        <link rel="stylesheet" href="css/contact.css">
 
     </head>
 </head>
@@ -111,26 +111,28 @@
                 </div>
 
                 <!-- starting of form -->
-                <div class="main-container">
-                    <form>
-                        <div class="form-fields">
-                            <input type="text" pattern="[a-zA-Z ]+" maxlength="50" placeholder="Fisrt Name" required />
-                            <input type="text" pattern="[a-zA-Z ]+" maxlength="50" placeholder="Last Name" required />
-                            <input type="email" placeholder="Email Address" required />
-                            <input type="tel" pattern="[0-9]+" maxlength="10" minlength="10" placeholder="Phone"
-                                required />
-                            <input type="text" placeholder="Institution Name">
-                            <input type="text" placeholder="Department">
-                            <input type="text" placeholder="City">
-                            <input type="text" placeholder="State">
-                            <input type="text" placeholder="Pincode">
-                        </div>
-                        <div class="submit">
-                            <button id="submit" type="submit">Submit</button>
-                            <button id="reset" type="reset">Reset</button>
-                        </div>
-                    </form>
-                </div>
+                <form
+                    action="https://script.google.com/macros/s/AKfycbyIs7i0uXX7wkxB2i5OyNRERTWwY4n-EEtBpA0skGSlQ4tpV2I0BLLLwAqGzyU2fD6h3g/exec"
+                    method="POST" name="contact_form">
+                    <div class="form-fields">
+                        <input type="text" name="firstName" pattern="[a-zA-Z ]+" maxlength="50" placeholder="First Name"
+                            required />
+                        <input type="text" name="lastName" pattern="[a-zA-Z ]+" maxlength="50" placeholder="Last Name"
+                            required />
+                        <input type="email" name="email" placeholder="Email Address" required />
+                        <input type="tel" name="phone" pattern="[0-9]+" maxlength="10" minlength="10"
+                            placeholder="Phone" required />
+                        <input type="text" name="institutionName" placeholder="Institution Name" />
+                        <input type="text" name="department" placeholder="Department" />
+                        <input type="text" name="city" placeholder="City" />
+                        <input type="text" name="state" placeholder="State" />
+                        <input type="text" name="pincode" placeholder="Pincode" />
+                    </div>
+                    <div class="submit">
+                        <button id="submit" type="submit">Submit</button>
+                        <button id="reset" type="reset">Reset</button>
+                    </div>
+                </form>
                 <!-- ending of form -->
             </div>
         </section>
@@ -243,6 +245,7 @@
             </script>
         <!-- custom js -->
         <script type="text/javascript" src="js/custom.js"></script>
+        <script type="text/javascript" src="js/contact.js"></script>
         <!-- Google Map -->
         <script
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
