@@ -98,9 +98,6 @@ form:hover::after {
     color: #f27a05;
 }
 
-h2 {
-    text-align: center;
-}
 
 @media (max-width: 500px) {
     .form-fields {
