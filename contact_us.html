@@ -34,6 +34,7 @@
         <link href="css/style.css" rel="stylesheet" />
         <!-- responsive style -->
         <link href="css/responsive.css" rel="stylesheet" />
+        <link rel="stylesheet" href="css/connect.css">
 
     </head>
 </head>
@@ -101,41 +102,36 @@
             <div class="container  ">
                 <div class="heading_container heading_center">
                     <h2>
-                        Connect&nbsp;<span>With</span>&nbsp;Us
+                        Connect<span id="with">With</span>Us
                         <!-- Contact <span>Us</span> -->
                     </h2>
                     <p>
                         "Empowering tech enthusiasts to reach new heights through consistency and community."
                     </p>
                 </div>
-                <div class="row">
-                    <div class="col-md-6 ">
-                        <div class="img-box">
-                            <img src="images/about-img.png" alt="">
+
+                <!-- starting of form -->
+                <div class="main-container">
+                    <form>
+                        <div class="form-fields">
+                            <input type="text" pattern="[a-zA-Z ]+" maxlength="50" placeholder="Fisrt Name" required />
+                            <input type="text" pattern="[a-zA-Z ]+" maxlength="50" placeholder="Last Name" required />
+                            <input type="email" placeholder="Email Address" required />
+                            <input type="tel" pattern="[0-9]+" maxlength="10" minlength="10" placeholder="Phone"
+                                required />
+                            <input type="text" placeholder="Institution Name">
+                            <input type="text" placeholder="Department">
+                            <input type="text" placeholder="City">
+                            <input type="text" placeholder="State">
+                            <input type="text" placeholder="Pincode">
                         </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="detail-box">
-                            <h3>
-                                CodeSpace
-                            </h3>
-                            <p>
-                                At CodeSpace, we are more than just a tech club; we are a thriving community of
-                                innovators, creators, and enthusiasts united by a passion for technology. Founded with
-                                the vision of bringing together like-minded individuals, our mission is to foster a
-                                collaborative environment where ideas flourish and skills are honed.
-                            </p>
-                            <p>
-                            <h4>What We Do</h4>
-                            We offer a diverse range of activities designed to inspire and challenge our members. From
-                            hands-on workshops and tech talks to exciting hackathons and collaborative projects,
-                            CodeSpace is the place where learning meets action. Our events are crafted to cater to all
-                            interests—whether you’re into coding, design, AI, or just exploring new tech trends, there’s
-                            something for everyone.
-                            </p>
+                        <div class="submit">
+                            <button id="submit" type="submit">Submit</button>
+                            <button id="reset" type="reset">Reset</button>
                         </div>
-                    </div>
+                    </form>
                 </div>
+                <!-- ending of form -->
             </div>
         </section>
 
